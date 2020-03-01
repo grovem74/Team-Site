@@ -1,6 +1,10 @@
 const path = require("path");
 const fs = require("fs");
-const Employee = require("../lib/Employee");
+const Employee = require("./Employee");
+const Manager = require("./Manager");
+const Engineer = require("./Engineer");
+const Intern = require("./Intern");
+const app = require("../app");
 
 const templatesDir = path.resolve(__dirname, "../templates");
 
@@ -19,7 +23,6 @@ const render = employees => {
     .filter(employee => employee.getRole() === "Intern")
     .map(intern => renderIntern(intern))
   );
-
   return renderMain(html.join(""));
 
 };
