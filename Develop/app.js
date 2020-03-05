@@ -185,7 +185,7 @@ function makeEmployee(data) {
             case 'Intern':
                 return new Intern(name, id, email, school);
             case 'Engineer':
-                return new Manager(name, id, email, github);
+                return new Engineer(name, id, email, github);
         }
     })
 };
