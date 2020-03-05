@@ -18,8 +18,8 @@ const questions = [
     {
         type: "list",
         name: "role",
-        message: "What is your job title?",
-        choices: ["Manager", "Intern", "Engineer"]
+        message: "To start building your team, set manager info first.",
+        choices: ["Manager"]
     },
     {
         type: "input",
