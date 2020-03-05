@@ -14,7 +14,7 @@ class Employee {
     
     };
   
-    getID() {
+    getId() {
       return this.id;
   };
     
